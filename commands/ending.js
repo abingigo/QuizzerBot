@@ -30,7 +30,7 @@ module.exports = {
               .setColor('#e42643')
               .setTitle('Quiz Results')
               .setDescription(a);
-            var channellog = message.client.channels.cache.get('818495801658441749');
+            var channellog = message.client.channels.cache.get('');
             channellog.send(embed);
             db.close();
           });

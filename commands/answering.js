@@ -53,7 +53,7 @@ module.exports = {
             message.channel.send("Please wait while the quizmasters verify your answer");
             let msg = new Discord.Message();
             msg.content = a;
-            var channellog = message.client.channels.cache.get('789382147810918430');
+            var channellog = message.client.channels.cache.get('');
             let messageEmbed = await channellog.send(msg);
             messageEmbed.react(emoji);
             messageEmbed.react(emoji1);
