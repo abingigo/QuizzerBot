@@ -12,7 +12,7 @@ module.exports = {
             .setTitle('Quiz starting soon!')
             .setDescription('Press the ' + `${emoji}` + ' to be able to participate!');
         
-        var channellog = message.client.channels.cache.get('');
+        var channellog = message.client.channels.cache.get('839728047165800498');
         let messageEmbed = await channellog.send(embed);
         messageEmbed.react(emoji);
 

@@ -9,10 +9,9 @@ module.exports = {
         .setColor('#66bbff')
         .setTitle('Question ' + args[0])
         .setDescription(qn)
-        .setImage(img)
         .setFooter("DM your answer to this bot. Prefix your answers with $a. For example if the answer is Delhi type $a Delhi.")
-        var channellog = message.client.channels.cache.get('');
-        channellog.send(newEmbed);
+        var channellog = message.client.channels.cache.get('839728047165800498');
+        channellog.send(newEmbed).catch(console.error);
         MongoClient.connect(url, function(err, db) {
             if (err) throw err;
             var dbo = db.db("Leaderboard");
